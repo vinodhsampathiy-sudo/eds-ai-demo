@@ -1,0 +1,86 @@
+.ai-nav-header {
+  background-color: var(--background-color, #1a2332);
+  color: var(--text-color, #fff);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.ai-nav-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.ai-nav-header .left-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ai-nav-header .logo {
+  width: 40px;
+  height: auto;
+}
+
+.ai-nav-header .brand-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--brand-color, #00d9ff);
+}
+
+.ai-nav-header .center-section {
+  display: none;
+}
+
+.ai-nav-header .nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.ai-nav-header .nav-item a {
+  color: var(--nav-link-color, #b0bec5);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.ai-nav-header .nav-item a:hover {
+  color: var(--brand-color, #00d9ff);
+}
+
+.ai-nav-header .right-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ai-nav-header .sign-in {
+  color: var(--text-color, #fff);
+  text-decoration: none;
+}
+
+.ai-nav-header .cta-button {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--cta-button-bg, #00d9ff);
+  color: var(--cta-button-text-color, #1a2332);
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ai-nav-header .cta-button:hover {
+  background-color: var(--cta-button-bg-hover, #00b8d4);
+}
+
+@media (width >= 768px) {
+  .ai-nav-header .center-section {
+    display: block;
+  }
+}
